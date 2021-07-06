@@ -43,7 +43,7 @@ const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 uint32_t keymaps_len() {
-  return 19;
+  return sizeof(keymaps)/sizeof(uint16_t);
 }
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

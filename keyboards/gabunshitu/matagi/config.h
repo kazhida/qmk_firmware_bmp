@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "apidef.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xAB01
-#define PRODUCT_ID      0x6D74
+#define VENDOR_ID       0x0000
+#define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    ABplus Inc.
-#define PRODUCT         matagi
-#define DESCRIPTION     ABplus matagi
+#define MANUFACTURER    sekigon-gonnoc
+#define PRODUCT         ble_micro_pro
+#define DESCRIPTION     A development board for wireless split keyboards
 
 #define BMP_BOOTPIN_AS_RESET
 
@@ -38,10 +38,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 200
 
 /* key matrix size */
-#define MATRIX_ROWS_DEFAULT 5
-#define MATRIX_COLS_DEFAULT 16
-#define THIS_DEVICE_ROWS 5
-#define THIS_DEVICE_COLS 16
+#define MATRIX_ROWS_DEFAULT 1
+#define MATRIX_COLS_DEFAULT 19
+#define THIS_DEVICE_ROWS 1
+#define THIS_DEVICE_COLS 19
+#define IS_LEFT_HAND  true
 #define BMP_DEFAULT_MODE SINGLE
 
 /*
@@ -110,7 +111,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
-
-#define USE_I2C 1
 
 #endif /*__ASSEMBLER__*/

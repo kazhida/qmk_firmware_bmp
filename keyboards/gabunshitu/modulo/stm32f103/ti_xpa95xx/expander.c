@@ -3,7 +3,8 @@
 //
 
 #include "expander.h"
-#include <i2c_master.h>
+#include <i2c.h>
+#include "../i2c_master.h"
 
 #include "debug.h"
 

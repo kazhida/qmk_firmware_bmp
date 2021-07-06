@@ -16,4 +16,15 @@
 
 #pragma once
 
+
+#define BMP_FORCE_SAFE_MODE true
+
+#define USER_DEFINED_MSCMD { "lpme", usrcmd_lpme_test, "Test LPME-IO"}
+
+#ifndef __ASSEMBLER__
+#include "mscmd.h"
+MSCMD_USER_RESULT usrcmd_lpme_test(MSOPT *msopt, MSCMD_USER_OBJECT usrobj);
+#endif
+
+
 // place overrides here
